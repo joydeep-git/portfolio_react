@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*, *::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Home{
+    display: flex;
+    font-size: 16px;
+    font-family: 'Sono', sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    height: 90vh;
+    flex-direction: column;
+    background-color: #fffcf2;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.intro h5, h5 span{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.intro h5 span:hover{
+    color: #e86b25;
+    cursor: pointer;
+}
+
+.intro p{
+    font-size: 1.5rem;
+}
+
+.links{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.links a svg{
+    color: black;
+    height: fit-content;
+    width: 3rem;
+    margin: 0;
+    padding: 0;
+}
+.links svg:hover{
+    cursor: pointer;
+    color: #d62828;
+}

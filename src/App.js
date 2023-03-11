@@ -1,11 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
-
 import "./CSS/App.css";
-
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
-import Roadmap from "./Pages/Roadmap";
+import Experience from "./Pages/Experience";
 import Navbar from "./Components/Navbar";
 
 function App(){
@@ -15,13 +13,11 @@ function App(){
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/projects" element={<Projects/>}></Route>
-          <Route path="/roadmap" element={<Roadmap/>}></Route>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/Experience" element={<Experience/>}/>
         </Routes>
       </Router>
-
-
 
     </div>
   )
