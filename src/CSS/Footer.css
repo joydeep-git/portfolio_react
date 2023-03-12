@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+.Footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #21325e;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1rem;
+}
+.contact h2{
+    font-size: 2rem;
+}
+.contact h4{
+    font-size: 1.75rem;
+    letter-spacing: 4px;
+}
+.contact p{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+.contact p span{
+    font-size: 1.25rem;
+}
+
+.socialLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.socialLinks a{
+    padding: 0;
+    margin: 0;
+}
+
+.socialLinks a svg{
+    width: 3rem;
+    height: auto;
+    color: white;
+    cursor: pointer;
+}
+.socialLinks a svg:hover{
+    color: orange;
+}
+
+@media only screen and (max-width: 700px){
+    .Footer{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

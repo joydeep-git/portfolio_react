@@ -111,6 +111,7 @@
             justify-content: space-around;
             border: none;
             border-radius: 10px;
+            z-index: 1;
         }
 
         #open .link{
