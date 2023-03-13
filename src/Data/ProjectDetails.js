@@ -27,7 +27,7 @@ export const projectDetails = [
 
     { id: 7 , name: "Number Game", image: guessNumber, github: "https://github.com/joydeep-git/guess-the-number_js", liveUrl: "https://jd-guessthenumber-js.netlify.app/", techUsed:" HTML, CSS & JS",},
     
-    ,{id: 8,name: "Clipboard Page", image: clipboardLanding, github: "https://github.com/joydeep-git/clipboard-landing-page_css", liveUrl: "https://jd-clipboardpage-css.netlify.app/", techUsed:" HTML & CSS",},
+    {id: 8,name: "Clipboard Page", image: clipboardLanding, github: "https://github.com/joydeep-git/clipboard-landing-page_css", liveUrl: "https://jd-clipboardpage-css.netlify.app/", techUsed:" HTML & CSS",},
 
     { id: 9, name: "Fylo Webpage", image: fyloLanding, github: "https://github.com/joydeep-git/fylo-landing-page_css", liveUrl: "https://jd-fylopage-css.netlify.app/", techUsed:" HTML & CSS",},
 
@@ -35,6 +35,6 @@ export const projectDetails = [
 
     { id: 11 , name: "Order Summary", image: orderSummary, github: "https://github.com/joydeep-git/order-summary_css", liveUrl: "https://jd-ordersummary-css.netlify.app/",techUsed:" HTML & CSS",},
 
-    { id: 12 , name: "Testimonial Page " , image: testimonialGrid, github: "https://github.com/joydeep-git/testimonials-grid_css", liveUrl: "https://jd-testimonialgrid-css.netlify.app/",techUsed:" HTML & CSS",},
+    { id: 12 , name: "Testimonial Page " , image: testimonialGrid, github: "https://github.com/joydeep-git/testimonials-grid_css", liveUrl: "https://jd-testimonialgrid-css.netlify.app/",techUsed:" HTML & CSS",}
 
 ];
