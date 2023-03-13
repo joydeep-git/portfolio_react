@@ -63,6 +63,10 @@
     display: none;
 }
 
+.homeLi{
+    display: none;
+}
+
 @media only screen and (max-width: 900px){
     *{
         font-size: 14px;
@@ -136,5 +140,8 @@
             cursor: pointer;
             border-radius: 10px;
             padding: 0.3rem 1rem;
+        }
+        .homeLi{
+            display: contents;
         }
 }

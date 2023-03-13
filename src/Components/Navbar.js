@@ -28,6 +28,7 @@ function Navbar() {
                 </div>
 
                 <div className='pages' id={openMenu ? "open" : "close"}>
+                    <Link to="/" className='link homeLi'>Home</Link>
                     <Link to="https://resume.io/r/KfGTUy2KV" className='link'>Resume</Link>
                     <Link to="/projects" className='link'>Projects</Link >
                     <Link to="/Experience" className='link'>About me</Link >

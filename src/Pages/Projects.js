@@ -1,27 +1,19 @@
 import React from 'react';
-import ProjectList from '../Components/ProjectList';
-
-import taskManager from "../Image/task-manager-react.png";
-
-import {FaReact} from 'react-icons';
-
-
+import {projectDetails} from "../Data/ProjectDetails";
+import ProjectItems from '../Components/ProjectItems';
 import "../CSS/Projects.css";
 
 function Projects() {
     return (
         <div className="Projects">
-
-            <div>
-                <div><img src={taskManager} alt="Task Manager" /></div>
-                <div>
-                    <h4>Task Manager</h4>
-                </div>
-
-                <img src={FaReact} alt="" />
-
-                
-
+            <h1>My Projects</h1>
+            
+            <div className='mainItem'>
+                {projectDetails.map((project)=>{
+                    return(
+                        <ProjectItems name={project.name} image={project.image}/>
+                    )
+                })}
             </div>
 
         </div>
