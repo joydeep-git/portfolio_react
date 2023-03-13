@@ -10,7 +10,7 @@ function Footer() {
                 <h4>Joydeep Das</h4>
                 <p><span>Ph No :</span> <span>+91 6290589624</span></p>
                 <p><span>E-mail:</span><span>joydeep19@protonmail.com</span></p>
-                <p><span>Address:</span><span>Amodghata, West Bengal, India</span></p>
+                <p><span>Address:</span><span>Hooghly, West Bengal, India</span></p>
 
             </div>
 
