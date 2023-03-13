@@ -11,7 +11,7 @@ function Projects() {
             <div className='mainItem'>
                 {projectDetails.map((project)=>{
                     return(
-                        <ProjectItems name={project.name} image={project.image}/>
+                        <ProjectItems key={project.id} name={project.name} image={project.image} github={project.github} liveUrl={project.liveUrl} techUsed ={project.techUsed} />
                     )
                 })}
             </div>
