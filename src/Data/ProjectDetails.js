@@ -13,7 +13,7 @@ import weatherApp from "../Image/weather-app.png";
 
 export const projectDetails = [
 
-    { id:1, name: "Shopping App" , image: taskManager, techUsed: "React.js", github: "https://github.com/joydeep-git/shopping-cart_react", liveUrl: "https://jd-shopping-app-react.netlify.app/",},
+    { id:1, name: "Shopping App" , image: taskManager, techUsed: "React.js & Redux", github: "https://github.com/joydeep-git/shopping-cart_react", liveUrl: "https://jd-shopping-app-react.netlify.app/",},
     
     { id:2, name: "Authentication & CRUD" , image: taskManager, techUsed: "React.js", github: "https://github.com/joydeep-git/authentication-crud_react", liveUrl: "https://jd-auth-crud-react.netlify.app/",},
     
