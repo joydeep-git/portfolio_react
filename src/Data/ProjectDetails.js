@@ -13,10 +13,10 @@ import weatherApp from "../Image/weather-app.png";
 
 export const projectDetails = [
 
-    // { id:1, name: "Task Manager" , image: taskManager, techUsed: "React.js  & Firebase", github: "https://github.com/joydeep-git/task-manager_react", liveUrl: "https://jd-taskmanager-react.netlify.app/",},
-
-    // { id:2, name: "Task Manager" , image: taskManager, techUsed: "React.js  & Firebase", github: "https://github.com/joydeep-git/task-manager_react", liveUrl: "https://jd-taskmanager-react.netlify.app/",},
-
+    { id:1, name: "Shopping App" , image: taskManager, techUsed: "React.js", github: "https://github.com/joydeep-git/shopping-cart_react", liveUrl: "https://jd-shopping-app-react.netlify.app/",},
+    
+    { id:2, name: "Authentication & CRUD" , image: taskManager, techUsed: "React.js", github: "https://github.com/joydeep-git/authentication-crud_react", liveUrl: "https://jd-auth-crud-react.netlify.app/",},
+    
     { id:3, name: "Task Manager" , image: taskManager, techUsed: "React.js  & Firebase", github: "https://github.com/joydeep-git/task-manager_react", liveUrl: "https://jd-taskmanager-react.netlify.app/",},
 
     { id: 4 , name: " To-Do List" , image: toDoList, github: "https://github.com/joydeep-git/to-do-list_react", liveUrl: "https://jd-todolist-react.netlify.app/", techUsed: "React.js"},
