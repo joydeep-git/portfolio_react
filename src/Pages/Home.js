@@ -7,7 +7,7 @@ function Home() {
 
             <div className='homeTop'>
                 <div className="intro">
-                    <h5>Hi, I'm <span>Joydeep Das</span></h5>
+                    <h5>Greetings! I'm <span>Joydeep Das</span> the wizard of web development.</h5>
                     <p>Passionate front-end web developer who turned the hobby into a profession.</p>
                 </div>
 
