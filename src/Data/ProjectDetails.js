@@ -14,6 +14,8 @@ import weatherApp from "../Image/weather-app.png";
 import { v4 as uuidv4 } from "uuid";
 
 export const projectDetails = [
+    
+    { id: uuidv4(), name: "ElecDroid Store", techUsed: "React.js, SCSS", github: "https://github.com/joydeep-git/elecdroid-store_react", liveUrl: "https://jd-elecdroid-store-react.netlify.app/",  },
 
     { id: uuidv4(), name: "YouTube Clone" , image: taskManager, techUsed: "React.js, Tailwind CSS & Rapid API", github: "https://github.com/joydeep-git/youtube-clone_react", liveUrl: "https://jd-youtube-clone-react.netlify.app/",},
 
