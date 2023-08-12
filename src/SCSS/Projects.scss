@@ -1,0 +1,39 @@
+@import "./DATA.scss";
+
+.Projects {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 2.5rem;
+    background-color: $White-color;
+    color: $Black-color;
+
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+        padding: 2rem;
+    }
+
+    .mainItem {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        gap: 3.5rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .Projects{
+
+        .mainItem{
+            padding: 0;
+        }
+    }
+}

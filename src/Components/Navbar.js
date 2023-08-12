@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import "../CSS/Navbar.css";
-import { HiMenuAlt3 } from "react-icons/hi";
+import "../CSS/Navbar.scss";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { RxCross2 } from "react-icons/rx";
 
 function Navbar() {
 
@@ -19,12 +20,12 @@ function Navbar() {
             <div className='navItems'>
 
                 <div>
-                    <Link to="/" className='logo'>{"< JD />"}</Link >
+                    <Link to="/" className='logo'>{"[/  /]"}</Link >
                 </div>
 
                 <div className='menuBtn'>
                     <button onClick={() => { setOpenMenu(!openMenu) }}>
-                        <HiMenuAlt3 />
+                        { openMenu ? <RxCross2 /> : <HiOutlineMenuAlt4 />}
                     </button>
                 </div>
 
