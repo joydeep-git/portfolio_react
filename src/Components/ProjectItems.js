@@ -9,7 +9,7 @@ function ProjectItems({ name, image, github, liveUrl, techUsed }) {
         <div className='ProjectItems'>
 
             <div className='img'>
-                <img src={image} />
+                <img src={image} alt={name} />
             </div>
 
             <div className='projectData'>
