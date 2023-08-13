@@ -1,18 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-}
+@import "./DATA.scss";
 
-.Navbar{
+.Navbar {
     display: flex;
-    background-color: #21325e;
-    width: 100%;
-    height: 100%;
+    background-color: $Second-color;
 }
 
-.navItems{
+.navItems {
     display: flex;
     flex-direction: row;
     padding: 1.5rem 3.5rem;
@@ -21,123 +14,138 @@
     align-items: center;
 }
 
-.logo{
+.logo {
     color: white;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
 }
-.logo:hover{
-    color: #00ff4c;
-    transition: 0.5s;
+
+.logo:hover {
+    color: $Black-color;
 }
 
-.menuBtn{
+.menuBtn {
     display: none;
 }
 
-.pages{
+.pages {
     display: flex;
     gap: 2rem;
 }
 
-.link{
+.link {
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
 }
-.link:hover{
-    color: #e86b25;
+
+.link:hover {
+    color: $Black-color;
 }
 
-.close{
+.close {
     display: none;
 }
 
-.closeBtn{
+.closeBtn {
     display: none;
 }
 
-.homeLi{
+.homeLi {
     display: none;
 }
 
-@media only screen and (max-width: 900px){
-    *{
+@media only screen and (max-width: 900px) {
+    * {
         font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 600px){
-        *{
-            font-size: 12px;
-        }
-        .pages{
-            display: none;
-        }
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 12px;
+    }
 
-        .menuBtn{
-            display: contents;
-        }
+    .pages {
+        display: none;
+    }
 
-        .menuBtn > button{
-            border: none;
-            cursor: pointer;
-            border-radius: 3px;
-            text-decoration: none;
-            height: 3rem;
-            width: 3rem;
-            background: transparent;
-        }
-        .menuBtn  > button > svg{
-            width: 100%;
-            height: 100%;
-            color: white;
-        }
-        .menuBtn  > button > svg:hover{
-            color: #00ff4c;
-        }
-        #open{
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            top: 0; bottom: 0; left: 0; right: 0;
-            background-color:#21325e;
-            height: 55%;
-            width: 60%;
-            margin: auto;
-            padding: 2rem;
-            justify-content: space-around;
-            border: none;
-            border-radius: 10px;
-            z-index: 1;
-        }
+    .menuBtn {
+        display: contents;
+    }
 
-        #open .link{
-            display: flex;
-            position: relative;
-            color: #ffffff;
-            align-self: center;
+    .menuBtn>button {
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+        text-decoration: none;
+        height: 3rem;
+        width: 3rem;
+        background: transparent;
+    }
+
+    .menuBtn>button>svg {
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+
+    .menuBtn>button>svg:hover {
+        color: $Black-color;
+    }
+
+    #open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $White-color;
+        box-shadow: $Box-shadow;
+        height: 55%;
+        width: 60%;
+        margin: auto;
+        padding: 2rem;
+        justify-content: space-around;
+        border: none;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #open .link {
+        display: flex;
+        position: relative;
+        color: $Black-color;
+        align-self: center;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    #open .link:hover {
+        color: $Third-color;
+    }
+
+    .closeBtn {
+        display: contents;
+        position: relative;
+        background-color: $Second-color;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+        padding: 0.3rem 1rem;
+
+        svg{
             font-size: 2rem;
-            font-weight: 500;
         }
-        #open .link:hover{
-            color:#e86b25;
-        }
-        .closeBtn{
-            display: contents;
-            position: relative;
-            background-color: #0b0a0a;
-            color: #ffffff;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            cursor: pointer;
-            border-radius: 10px;
-            padding: 0.3rem 1rem;
-        }
-        .homeLi{
-            display: contents;
-        }
+    }
+
+    .homeLi {
+        display: contents;
+    }
 }

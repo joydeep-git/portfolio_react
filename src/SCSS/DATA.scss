@@ -8,3 +8,21 @@ $White-color: #ffffff;
 $Black-color: #000000;
 $Box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 $Box-shadow2: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+@mixin dajt($direction , $align, $justify, $text) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    text-align: $text;
+}
+
+@mixin hw($h, $w) {
+    height: $h;
+    width: $w;
+}
+
+@mixin mp($m, $p) {
+    margin: $m;
+    padding: $p;
+}
