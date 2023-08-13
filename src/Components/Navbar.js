@@ -5,6 +5,8 @@ import "../SCSS/Navbar.scss";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 
+import resume from "../pdf/resume.pdf";
+
 function Navbar() {
 
     const [openMenu, setOpenMenu] = useState(false);
@@ -30,9 +32,13 @@ function Navbar() {
                 </div>
 
                 <div className='pages' id={openMenu ? "open" : "close"}>
+
                     <Link to="/" className='link homeLi'>HOME</Link>
-                    <Link to="https://resume.io/r/KfGTUy2KV" className='link'>RESUME</Link>
+
+                    <Link onClick={ () => window.open(resume)} className='link'>RESUME</Link>
+
                     <Link to="/projects" className='link'>PROJECTS</Link >
+
                     <Link to="/Experience" className='link'>ABOUT ME</Link >
 
                     <button className='closeBtn link' onClick={() => { setOpenMenu(false) }}>
