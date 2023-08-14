@@ -24,7 +24,7 @@ function Home() {
             <div className='homeTop'>
                 <div className="intro">
                     <h5>Hello!  &nbsp; I'm <span>Joydeep Das</span></h5>
-                    <p>Passionate front-end web developer who turned the hobby into a profession.</p>
+                    <p>Passionate React.js Developer | Constantly Exploring and Learning</p>
                 </div>
 
                 <div className='links'>

@@ -6,7 +6,7 @@ import "../SCSS/Projects.scss";
 function Projects() {
     return (
         <div className="Projects">
-            <h1>My Projects</h1>
+            <h1>Code. Eat. Sleep. Repeat</h1>
             
             <div className='mainItem'>
                 {projectDetails.map((project)=>{
