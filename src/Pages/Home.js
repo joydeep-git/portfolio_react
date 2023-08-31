@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 import "../SCSS/Home.scss";
 
@@ -18,6 +19,26 @@ import {
 } from "react-icons/si";
 
 function Home() {
+
+    const history = useNavigate();
+
+    useEffect(() => {
+
+        const handleBeforeUnload = (e) => {
+            e.preventDefault();
+
+            e.returnValue = "";
+            history.push("/");
+        }
+
+        window.addEventListener("beforeunload", handleBeforeUnload);
+
+        return () => {
+            window.removeEventListener("beforeunload", handleBeforeUnload); // Corrected this line
+        }
+
+    }, [history]);
+
     return (
         <div className="Home">
 
