@@ -2,7 +2,7 @@ import calculator from "../Image/calculator.png";
 import chatApp from "../Image/chat-app.png";
 import clipboardLanding from "../Image/clipboard-landing.png";
 import formValidation from "../Image/form-validation.png";
-import fyloLanding from "../Image/fyle-landing-page.png";
+import fyloLanding from "../Image/fylo-landing-page.png";
 import guessNumber from "../Image/number-game.png";
 import orderSummary from "../Image/order-summary.png";
 import rockPaper from "../Image/rock-paper-scissor.png";
