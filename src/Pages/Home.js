@@ -2,7 +2,9 @@ import React from 'react';
 
 import "../SCSS/Home.scss";
 
-import { BsLinkedin, BsGithub, BsFiletypeScss as ScssIcon } from "react-icons/bs";
+import { BsLinkedin, BsGithub, } from "react-icons/bs";
+
+import { SiSass as ScssIcon  } from "react-icons/si";
 
 import {
     FaReact as ReactIcon,
@@ -43,7 +45,7 @@ function Home() {
 
             <div className='skills'>
                 <div className='skillText'>
-                    <p >Skills</p>
+                    <p >Tech Stack</p>
                 </div>
 
                 <div className='skill'>
