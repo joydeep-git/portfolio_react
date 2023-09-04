@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import "../SCSS/Navbar.scss";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
+import { TbIcons, TbIconsOff } from "react-icons/tb";
 
 import resume from "../pdf/resume.pdf";
 
@@ -11,18 +12,43 @@ function Navbar() {
 
     const [openMenu, setOpenMenu] = useState(false);
 
+    const [scrolled, setScrolled] = useState(false);
+
+    const [hover, setHover] = useState(false);
+
     const location = useLocation();
+
+    const handleScrollEvent = () => {
+        if (window.scrollY > 0) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    }
+
     useEffect(() => {
-        setOpenMenu(false)
+        setOpenMenu(false);
+
+        window.addEventListener("scroll", handleScrollEvent);
+
+        return () => {
+            window.removeEventListener("scroll", handleScrollEvent);
+        }
+
     }, [location]);
 
     return (
-        <div className='Navbar'>
+        <div className={`Navbar ${scrolled ? "Nav-scroll" : null}`}>
 
             <div className='navItems'>
 
                 <div>
-                    <Link to="/" className='logo'>{"[/  /]"}</Link >
+                    <Link to="/"
+                        className='logo'
+                        onMouseEnter={() => setHover(true)}
+                        on onMouseLeave={() => setHover(false)}>
+                        {hover ? <TbIconsOff /> : <TbIcons />}
+                    </Link >
                 </div>
 
                 <div className='menuBtn'>
@@ -31,11 +57,13 @@ function Navbar() {
                     </button>
                 </div>
 
-                <div className='pages' id={openMenu ? "open" : "close"}>
+                <div
+                    className={`pages ${scrolled ? "nav-pages" : null}`}
+                    id={openMenu ? "open" : "close"}>
 
                     <Link to="/" className='link homeLi'>HOME</Link>
 
-                    <Link onClick={ () => window.open(resume)} className='link'>RESUME</Link>
+                    <Link onClick={() => window.open(resume)} className='link'>RESUME</Link>
 
                     <Link to="/projects" className='link'>PROJECTS</Link >
 

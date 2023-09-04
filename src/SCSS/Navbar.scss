@@ -2,12 +2,19 @@
 
 .Navbar {
     display: flex;
-    background-color: #f8f8f8;
-    height: 4rem;
+    background-color: #ffffff;
+    height: 3.5rem;
     position: fixed;
+    padding: 1rem;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
+}
+
+.Nav-scroll {
+    transition: 1s ease;
+    background-color: $Second-color;
 }
 
 .navItems {
@@ -20,15 +27,18 @@
 }
 
 .logo {
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
+    color: #32127A;
+    font-size: 2.5rem;
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: 1s ease;
 }
 
-.logo:hover {
-    color: $Black-color;
+.logo:hover{
+    color: #E30B5C;
 }
 
 .menuBtn {
@@ -37,17 +47,20 @@
 
 .pages {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .link {
-    color: rgb(0, 0, 0);
+    color: #00563B;
     font-size: 1.25rem;
     text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .link:hover {
-    color: $Black-color;
+    box-shadow: 0px 0px 5px rgb(209, 209, 209);
+    color: #E30B5C;
 }
 
 .close {
@@ -145,7 +158,7 @@
         border-radius: 15px;
         padding: 0.3rem 1rem;
 
-        svg{
+        svg {
             font-size: 2rem;
         }
     }
