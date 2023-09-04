@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import "../SCSS/Home.scss";
 
@@ -22,6 +22,10 @@ import Navbar from '../Components/Navbar';
 
 function Home() {
 
+    useEffect(() => {
+        alert("Making changes on this website. You may see few things not visible clearly or not working. ");
+    }, []);
+    
     return (
         <>
             <Navbar />
