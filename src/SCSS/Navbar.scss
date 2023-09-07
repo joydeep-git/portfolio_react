@@ -37,7 +37,7 @@
     transition: 1s ease;
 }
 
-.logo:hover{
+.logo:hover {
     color: #E30B5C;
 }
 
@@ -47,7 +47,7 @@
 
 .pages {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .link {
@@ -63,12 +63,12 @@
     color: #E30B5C;
 }
 
-.navItems-scrolled{
+.navItems-scrolled {
     color: black;
     background: none;
 }
 
-.navItems-scrolled:hover{
+.navItems-scrolled:hover {
     color: white;
     box-shadow: 0px 0px 5px rgb(225, 225, 225);
 }
@@ -88,6 +88,10 @@
 @media only screen and (max-width: 900px) {
     * {
         font-size: 14px;
+    }
+
+    .pages {
+        gap: 1.25rem;
     }
 }
 
@@ -138,6 +142,7 @@
         border: none;
         border-radius: 10px;
         z-index: 1;
+        gap: 0;
     }
 
     #open .link {
@@ -145,12 +150,14 @@
         position: relative;
         color: $Black-color;
         align-self: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 500;
+        text-align: center;
     }
 
     #open .link:hover {
-        color: $Third-color;
+        color: $First-color;
+        box-shadow: 0px 0px 2px $First-color;
     }
 
     .closeBtn {

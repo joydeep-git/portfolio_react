@@ -2,8 +2,8 @@
 
 .Projects {
     display: flex;
+    margin-top: 2rem;
     flex-direction: column;
-    margin: 0;
     padding-bottom: 2.5rem;
     background-color: $White-color;
     color: $Black-color;
@@ -30,14 +30,14 @@
 
 @media screen and (max-width: 450px) {
 
-    .Projects{
+    .Projects {
 
-        h1{
+        h1 {
             font-size: 2rem;
             margin-bottom: 1.5rem;
         }
 
-        .mainItem{
+        .mainItem {
             padding: 0;
         }
     }
