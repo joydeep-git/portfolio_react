@@ -26,7 +26,7 @@
     align-items: center;
 }
 
-.logo {
+.logo>svg {
     color: #32127A;
     font-size: 2.5rem;
     font-weight: 700;
@@ -59,8 +59,18 @@
 }
 
 .link:hover {
-    box-shadow: 0px 0px 5px rgb(209, 209, 209);
+    box-shadow: 0px 0px 5px rgb(189, 189, 189);
     color: #E30B5C;
+}
+
+.navItems-scrolled{
+    color: black;
+    background: none;
+}
+
+.navItems-scrolled:hover{
+    color: white;
+    box-shadow: 0px 0px 5px rgb(225, 225, 225);
 }
 
 .close {
@@ -107,11 +117,7 @@
     .menuBtn>button>svg {
         width: 100%;
         height: 100%;
-        color: white;
-    }
-
-    .menuBtn>button>svg:hover {
-        color: $Black-color;
+        color: rgb(0, 0, 0);
     }
 
     #open {

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import "../SCSS/Navbar.scss";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
-import { TbIcons, TbIconsOff } from "react-icons/tb";
+import { GiReactor } from "react-icons/gi";
 
 import resume from "../pdf/resume.pdf";
 
@@ -13,8 +13,6 @@ function Navbar() {
     const [openMenu, setOpenMenu] = useState(false);
 
     const [scrolled, setScrolled] = useState(false);
-
-    const [hover, setHover] = useState(false);
 
     const location = useLocation();
 
@@ -44,10 +42,8 @@ function Navbar() {
 
                 <div>
                     <Link to="/"
-                        className='logo'
-                        onMouseEnter={() => setHover(true)}
-                        on onMouseLeave={() => setHover(false)}>
-                        {hover ? <TbIconsOff /> : <TbIcons />}
+                        className='logo'>
+                        <GiReactor />
                     </Link >
                 </div>
 
@@ -63,11 +59,11 @@ function Navbar() {
 
                     <Link to="/" className='link homeLi'>HOME</Link>
 
-                    <Link onClick={() => window.open(resume)} className='link'>RESUME</Link>
+                    <Link onClick={() => window.open(resume)} className={`link ${scrolled ? "navItems-scrolled" : null}`}>RESUME</Link>
 
-                    <Link to="/projects" className='link'>PROJECTS</Link >
+                    <Link to="/projects" className={`link ${scrolled ? "navItems-scrolled" : null}`}>PROJECTS</Link >
 
-                    <Link to="/Experience" className='link'>ABOUT ME</Link >
+                    <Link to="/Experience" className={`link ${scrolled ? "navItems-scrolled" : null}`}>ABOUT ME</Link >
 
                     <button className='closeBtn link' onClick={() => { setOpenMenu(false) }}>
                         <RxCross2 />
