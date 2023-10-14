@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import "../SCSS/Navbar.scss";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
-import { GiReactor } from "react-icons/gi";
+import { FaReact } from "react-icons/fa";
 
 import resume from "../pdf/resume.pdf";
 
@@ -43,7 +43,7 @@ function Navbar() {
                 <div>
                     <Link to="/"
                         className='logo'>
-                        <GiReactor />
+                        <FaReact />
                     </Link >
                 </div>
 
