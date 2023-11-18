@@ -43,7 +43,6 @@ export const projectDetails = [
             <ReactIcon title="REACT.JS" />,
             <JavascriptIcon title="JAVASCRIPT" />,
             <ScssIcon title="SCSS" />,
-            <HtmlIcon title="HTML" />,
             <FirebaseIcon title="FIREBASE" />,
         ],
         github: "https://github.com/joydeep-git/elecdroid-store_react",
@@ -58,7 +57,6 @@ export const projectDetails = [
             <ReactIcon title="REACT.JS" />,
             <JavascriptIcon title="JAVASCRIPT" />,
             <TailwindIcon title="TAILWIND CSS" />,
-            <HtmlIcon title="HTML" />,
             <FirebaseIcon title="FIREBASE" />,
         ],
         github: "https://github.com/joydeep-git/youtube-clone_react",
@@ -73,7 +71,6 @@ export const projectDetails = [
             <ReactIcon title="REACT.JS" />,
             <JavascriptIcon title="JAVASCRIPT" />,
             <CssIcon title="CSS" />,
-            <HtmlIcon title="HTML" />,
             <FirebaseIcon title="FIREBASE" />
         ],
         github: "https://github.com/joydeep-git/task-manager_react",
@@ -89,7 +86,6 @@ export const projectDetails = [
             <ReduxIcon title="REDUX" />,
             <JavascriptIcon title="JAVASCRIPT" />,
             <CssIcon title="CSS" />,
-            <HtmlIcon title="HTML" />
         ],
         github: "https://github.com/joydeep-git/shopping-cart_react",
         liveUrl: "https://jd-shopping-app-react.netlify.app/",
@@ -103,7 +99,6 @@ export const projectDetails = [
             <ReactIcon title="REACT.JS" />,
             <JavascriptIcon title="JAVASCRIPT" />,
             <CssIcon title="CSS" />,
-            <HtmlIcon title="HTML" />
         ],
         github: "https://github.com/joydeep-git/authentication-crud_react",
         liveUrl: "https://jd-auth-crud-react.netlify.app/",
@@ -117,7 +112,6 @@ export const projectDetails = [
             <ReactIcon title="REACT.JS" />,
             <JavascriptIcon title="JAVASCRIPT" />,
             <CssIcon title="CSS" />,
-            <HtmlIcon title="HTML" />
         ],
         github: "https://github.com/joydeep-git/to-do-list_react",
         liveUrl: "https://jd-todolist-react.netlify.app/",
