@@ -1,19 +1,7 @@
-import calculator from "../Image/calculator.png";
-import chatApp from "../Image/chat-app.png";
-import clipboardLanding from "../Image/clipboard-landing.png";
-import formValidation from "../Image/form-validation.png";
-import fyloLanding from "../Image/fylo-landing-page.png";
-import guessNumber from "../Image/number-game.png";
-import orderSummary from "../Image/order-summary.png";
 import rockPaper from "../Image/rock-paper-scissor.png";
 import taskManager from "../Image/task-manager.png";
-import testimonialGrid from "../Image/testimonial-grid.png";
-import toDoList from "../Image/to-do-list.png";
-import weatherApp from "../Image/weather-app.png";
 import elecdroidStore from "../Image/elecdroid-store.png";
 import youtubeClone from "../Image/youtube-clone.png";
-import shoppingCart from "../Image/shopping-cart.png";
-import authCrud from "../Image/auth-crud.png";
 
 import {
     FaReact as ReactIcon,
