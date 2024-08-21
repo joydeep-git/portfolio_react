@@ -14,7 +14,6 @@ import { IoLogoJavascript as JavascriptIcon } from "react-icons/io5";
 import {
     SiFirebase as FirebaseIcon,
     SiTailwindcss as TailwindIcon,
-    SiRedux as ReduxIcon,
 } from "react-icons/si";
 
 import { BsFiletypeScss as ScssIcon } from "react-icons/bs";
