@@ -17,6 +17,7 @@
     .img {
         object-fit: contain;
         width: 25rem;
+        min-height: 13rem;
         height: max-content;
         overflow: hidden;
 
@@ -84,6 +85,7 @@
 
                 p {
                     align-items: center;
+                    white-space: nowrap;
                 }
 
                 span {
@@ -109,6 +111,7 @@
 
         .img {
             width: 18rem;
+            min-height: 9rem;
         }
     }
 }

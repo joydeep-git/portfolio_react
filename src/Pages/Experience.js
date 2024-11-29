@@ -2,51 +2,83 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+// Icons
+import { GraduationCapIcon as Study, BriefcaseIcon as Job } from '../icons/IconPack';
+
+
 import "../SCSS/Experience.scss";
 
 function Experience() {
 
-    const style = {
-        background: "#023047",
-        color: "#ffffff",
-    }
+  const style = {
+    background: "#023047",
+    color: "#ffffff",
+  }
 
-    return (
-        <div className="Experience">
-            <VerticalTimeline>
 
-                <VerticalTimelineElement iconStyle={style} date='2010 - 2018' className='style' icon={<svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>}>
-                    <h2>High School Diploma</h2>
-                    <p>Magra Uttam Chandra High School  -- Magra, West Bengal</p>
-                </VerticalTimelineElement>
+  const timeline = [
+    {
+      title: "Frontend Developer",
+      place: "Digital Woods, Siliguri",
+      type: "job",
+      duration: "February 2024 - Present",
+    },
+    {
+      title: "Web Development",
+      place: "Self Study - YouTube",
+      type: "study",
+      duration: "2023 - 2024",
+    },
+    {
+      title: "ITES Executive",
+      place: "iMerit Technology Services Pvt Ltd, Kolkata, West Bengal",
+      type: "job",
+      duration: "July 2021 - December 2022",
+    },
+    {
+      title: "Diploma in Graphic Design",
+      place: "Anudip Foundation, Kolkata, West Bengal",
+      type: "study",
+      duration: "2020 - 2021",
+    },
+    {
+      title: "Certificate Course in Desktop Publishing",
+      place: "Tribeni Commercial College, Tribeni, West Bengal",
+      type: "study",
+      duration: "2019 - 2020",
+    },
+    {
+      title: "B.Sc Graduation",
+      place: "Sreegopal Banerjee College, Magra, West Bengal",
+      type: "study",
+      duration: "2018 - 2021",
+    },
+    {
+      title: "High School Diploma",
+      place: "Magra Uttam Chandra High School, Magra, West Bengal",
+      type: "study",
+      duration: "2010 - 2018",
+    },
+  ];
 
-                <VerticalTimelineElement iconStyle={style} date='2018 - 2021' className='style' icon={<svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>}>
-                    <h2>B.Sc Graduation</h2>
-                    <p>Sreegopal Banerjee College  -- Magra, West Bengal</p>
-                </VerticalTimelineElement>
 
-                <VerticalTimelineElement iconStyle={style} date='2019 - 2020' className='style' icon={<svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>}>
-                    <h2>Certificate Course in Desktop Publishing</h2>
-                    <p>Tribeni Commercial College  -- Tribeni, West Bengal</p>
-                </VerticalTimelineElement>
+  return (
+    <div className="Experience">
+      <VerticalTimeline>
 
-                <VerticalTimelineElement iconStyle={style} date='2020 - 2021' className='style' icon={<svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>}>
-                    <h2>Diploma in Graphic Design</h2>
-                    <p>Anudip Foundation  -- Kolkata, West Benagal</p>
-                </VerticalTimelineElement>
+        {
+          timeline.map((val, index) => {
+            return (
+              <VerticalTimelineElement key={val.title + index} iconStyle={style} date={val.duration} className='style' icon={val.type === "job" ? <Job /> : <Study />}>
+                <h2>{val.title}</h2>
+                <p>{val.place}</p>
+              </VerticalTimelineElement>
+            )
+          })
+        }
 
-                <VerticalTimelineElement iconStyle={style} date=' July 2021 - December 2022' className='job style' icon={<svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"></path></svg>}>
-                    <h2>ITES Executive</h2>
-                    <p>iMerit Technology Services Pvt Ltd  -- Kolkata, West Bengal</p>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement iconStyle={style} date='2023 - Present' className='style' icon={<svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>}>
-                    <h2>MERN Stack Development</h2>
-                    <p>Skill Safari  -- Coimbatore, Tamil Nadu</p>
-                </VerticalTimelineElement>
-
-            </VerticalTimeline>
-        </div>
-    )
+      </VerticalTimeline>
+    </div>
+  )
 };
 export default Experience;

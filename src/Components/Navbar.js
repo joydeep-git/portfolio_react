@@ -2,9 +2,11 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import "../SCSS/Navbar.scss";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { RxCross2 } from "react-icons/rx";
-import { FaReact } from "react-icons/fa";
+
+
+import { CrossIcon, MenuIcon, ReactJsIcon } from '../icons/IconPack';
+
+
 
 import resume from "../pdf/resume.pdf";
 
@@ -43,13 +45,13 @@ function Navbar() {
                 <div>
                     <Link to="/"
                         className='logo'>
-                        <FaReact />
+                        <ReactJsIcon height='46px' width='46px' />
                     </Link >
                 </div>
 
                 <div className='menuBtn'>
                     <button onClick={() => { setOpenMenu(!openMenu) }}>
-                        {openMenu ? <RxCross2 /> : <HiOutlineMenuAlt4 />}
+                        {openMenu ? <CrossIcon /> : <MenuIcon />}
                     </button>
                 </div>
 
@@ -59,14 +61,14 @@ function Navbar() {
 
                     <Link to="/" className='link homeLi'>HOME</Link>
 
-                    <Link onClick={() => window.open(resume)} className={`link ${scrolled ? "navItems-scrolled" : null}`}>RESUME</Link>
+                    <Link onClick={() => window.open(resume)} className="link">RESUME</Link>
 
-                    <Link to="/projects" className={`link ${scrolled ? "navItems-scrolled" : null}`}>PROJECTS</Link >
+                    <Link to="/projects" className="link">PROJECTS</Link >
 
-                    <Link to="/Experience" className={`link ${scrolled ? "navItems-scrolled" : null}`}>ABOUT ME</Link >
+                    <Link to="/Experience" className="link">ABOUT ME</Link >
 
                     <button className='closeBtn link' onClick={() => { setOpenMenu(false) }}>
-                        <RxCross2 />
+                        <CrossIcon />
                     </button>
                 </div>
 

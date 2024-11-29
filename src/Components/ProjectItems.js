@@ -2,9 +2,12 @@ import React from 'react';
 
 import "../SCSS/ProjectItems.scss";
 
-import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
+import { RedirectIcon, GitHubIcon } from '../icons/IconPack';
+
+
 
 function ProjectItems({ name, image, github, liveUrl, techUsed }) {
+
     return (
         <div className='ProjectItems'>
 
@@ -33,11 +36,11 @@ function ProjectItems({ name, image, github, liveUrl, techUsed }) {
 
                     <a href={github} target="_blank" rel="noopener noreferrer">
                         <p>Code</p>
-                        <span><BsGithub /></span>
+                        <span><GitHubIcon /></span>
                     </a>
 
                     <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                        <p>Live Demo</p> <span><BsBoxArrowUpRight /></span>
+              <p>Live Demo</p> <span><RedirectIcon /></span>
                     </a>
 
                 </div>
