@@ -244,20 +244,10 @@ export const TwitterIcon = ({ height = "28px", width = "28px", ...restProps }) =
 };
 
 
-export const TypeScriptIcon = ({ height = "28px", width = "28px", ...restProps }) => {
+export const TypeScriptIcon = ({ height = "30px", width = "30px", ...restProps }) => {
   return (
-    <svg
-      height={height}
-      width={width}
-      viewBox="0 0 128 128"
-      {...restProps}
-    >
-      <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z" />
-      <path
-        data-name="original"
-        fill="#007acc"
-        d="M1.5 63.91v62.5h125v-125H1.5zm100.73-5a15.56 15.56 0 017.82 4.5..."
-      />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width={width} height={height}>
+      <linearGradient id="O2zipXlwzZyOse8_3L2yya" x1="15.189" x2="32.276" y1="-.208" y2="46.737" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4" /><stop offset="1" stop-color="#007ad9" /></linearGradient><rect width="36" height="36" x="6" y="6" fill="url(#O2zipXlwzZyOse8_3L2yya)" /><polygon fill="#fff" points="27.49,22 14.227,22 14.227,25.264 18.984,25.264 18.984,40 22.753,40 22.753,25.264 27.49,25.264" /><path fill="#fff" d="M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986	c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92	c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z" />
     </svg>
   );
 };
