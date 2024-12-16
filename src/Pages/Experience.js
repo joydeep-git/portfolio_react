@@ -25,7 +25,7 @@ function Experience() {
     },
     {
       title: "Frontend Development",
-      place: "Self Study - YouTube",
+      place: "Skillsafari",
       type: "study",
       duration: "2023 - 2024",
     },
