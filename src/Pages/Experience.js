@@ -24,7 +24,7 @@ function Experience() {
       duration: "February 2024 - Present",
     },
     {
-      title: "Web Development",
+      title: "Frontend Development",
       place: "Self Study - YouTube",
       type: "study",
       duration: "2023 - 2024",
